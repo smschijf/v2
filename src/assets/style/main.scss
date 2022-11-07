@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Nanum+Pen+Script&display=swap');
+// font-family: 'Nanum Pen Script', cursive;
+
+$textColor: #696969;
+$complementaryColor: #e96269;
+$textBackdrop: #ffe3e3;
+$textBoxShadow: #ffd6d6;
+
+@mixin smallerText {
+  font-family: 'Nanum Pen Script', cursive;
+  color: #b3b3b3;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.hero {
+  display: grid;
+  width: 80%;
+  height: 100vh;
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  .heroText {
+    h1 {
+      font-weight: 700;
+      margin: 10px 0;
+      color: $complementaryColor;
+      position: relative;
+      width: 80%;
+      font-size: 2.5rem;
+      max-width: 430px;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $textBackdrop;
+        box-shadow: 0 0 8px $textBoxShadow;
+        height: 23px;
+        left: 8px;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+    p {
+      width: 80%;
+      color: $textColor;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.6;
+      margin: 20px 0;
+      span {
+        color: $complementaryColor;
+      }
+      .smallerText {
+        @include smallerText();
+      }
+      a {
+        text-decoration: none;
+        color: $complementaryColor;
+      }
+    }
+  }
+  .heroImage {
+    max-width: 230px;
+    img {
+      width: 100%;
+    }
+  }
 }

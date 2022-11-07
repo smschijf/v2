@@ -1,5 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Nanum+Pen+Script&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+.hero {
+  display: grid;
+  width: 80%;
+  height: 100vh;
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+}
+.hero .heroText h1 {
+  font-weight: 700;
+  margin: 10px 0;
+  color: #e96269;
+  position: relative;
+  width: 80%;
+  font-size: 2.5rem;
+  max-width: 430px;
+}
+.hero .heroText h1::after {
+  content: "";
+  position: absolute;
+  background-color: #ffe3e3;
+  box-shadow: 0 0 8px #ffd6d6;
+  height: 23px;
+  left: 8px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+.hero .heroText p {
+  width: 80%;
+  color: #696969;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+.hero .heroText p span {
+  color: #e96269;
+}
+.hero .heroText p .smallerText {
+  font-family: "Nanum Pen Script", cursive;
+  color: #b3b3b3;
+}
+.hero .heroText p a {
+  text-decoration: none;
+  color: #e96269;
+}
+.hero .heroImage {
+  max-width: 230px;
+}
+.hero .heroImage img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
