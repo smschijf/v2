@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.noteText {
+    @include smallerText();
+    color: $complementaryColor;
+    font-size: 1.3rem;
+    max-width: 1080px;
+    width: 80%;
+}
+
+.projects {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}

@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Nanum+Pen+Script&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Karla", sans-serif;
-}
-
 .hero {
   display: grid;
   width: 80%;
@@ -42,7 +32,7 @@ body {
   width: 80%;
   color: #696969;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   margin: 20px 0;
 }
@@ -62,4 +52,42 @@ body {
 }
 .hero .heroImage img {
   width: 100%;
+}
+.hero .scrollDownIcon {
+  position: absolute;
+  justify-self: center;
+  padding-top: 90vh;
+  font-size: 19px;
+  color: #e96269;
+}
+
+.noteText {
+  font-family: "Nanum Pen Script", cursive;
+  color: #b3b3b3;
+  color: #e96269;
+  font-size: 1.3rem;
+  max-width: 1080px;
+  width: 80%;
+}
+
+.projects {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  width: 80%;
+  max-width: 1080px;
+  margin: 100px auto 0 auto;
 }/*# sourceMappingURL=main.css.map */
