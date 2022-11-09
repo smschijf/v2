@@ -9,7 +9,27 @@
 }
 
 .projects {
-  width: 80%;
-  max-width: 1080px;
-  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  .projectsRow {
+    @include projectsRow(60%, 40%);
+    display: grid;
+    column-gap: 32px;
+    .projectsCard {
+      display: flex;
+      height: 400px;
+      margin-bottom: 5%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .projectsOverlay {
+      display: none;
+    }
+    &:nth-of-type(2) {
+      @include projectsRow(40%, 60%);
+    }
+  }
 }

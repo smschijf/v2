@@ -1,5 +1,6 @@
 @use "layout/hero";
 @use "layout/projects";
+@use "layout/aboutMe";
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Nanum+Pen+Script&display=swap");
 
@@ -16,5 +17,5 @@ body {
 main {
   width: 80%;
   max-width: 1080px;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 0 auto;
 }

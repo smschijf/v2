@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 100px;
+  .aboutMeBio {
+    h2 {
+      @include h2();
+    }
+  }
+}
