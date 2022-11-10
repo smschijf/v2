@@ -32,7 +32,20 @@
   grid-template-columns: $column-left $column-right;
 }
 
-@mixin h2 {
-  font-size: 1.5rem;
+@mixin h2($width) {
+  position: relative;
+  width: $width;
+  font-size: 1.7rem;
   color: $complementaryColor;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $textBackdrop;
+    box-shadow: 0 0 8px $textBoxShadow;
+    height: 18px;
+    left: 5px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }

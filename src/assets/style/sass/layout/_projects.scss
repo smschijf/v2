@@ -10,11 +10,11 @@
 
 .projects {
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   .projectsRow {
-    @include projectsRow(60%, 40%);
+    @include projectsRow(6fr, 4fr);
     display: grid;
-    column-gap: 32px;
+    column-gap: 3.5%;
     .projectsCard {
       display: flex;
       height: 400px;
@@ -24,12 +24,15 @@
         width: 100%;
         border-radius: 10px;
       }
+      // &:nth-child(2) {
+      //   margin-left: 32px;
+      // }
     }
     .projectsOverlay {
       display: none;
     }
     &:nth-of-type(2) {
-      @include projectsRow(40%, 60%);
+      @include projectsRow(4fr, 6fr);
     }
   }
 }

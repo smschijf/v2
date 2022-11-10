@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Nanum+Pen+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  width: 80%;
+  max-width: 1080px;
+  margin: 50px auto 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
 .hero {
   display: grid;
   width: 80%;
@@ -72,13 +92,13 @@
 
 .projects {
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .projects .projectsRow {
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 6fr 4fr;
   display: grid;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  -moz-column-gap: 3.5%;
+       column-gap: 3.5%;
 }
 .projects .projectsRow .projectsCard {
   display: flex;
@@ -95,31 +115,85 @@
   display: none;
 }
 .projects .projectsRow:nth-of-type(2) {
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 4fr 6fr;
 }
 
 .aboutMe {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 6.5fr 3.5fr;
   row-gap: 100px;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.aboutMe .aboutMeBio {
+  display: flex;
+  flex-direction: column;
 }
 .aboutMe .aboutMeBio h2 {
-  font-size: 1.5rem;
+  position: relative;
+  width: 24%;
+  font-size: 1.7rem;
   color: #e96269;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.aboutMe .aboutMeBio h2::after {
+  content: "";
+  position: absolute;
+  background-color: #ffe3e3;
+  box-shadow: 0 0 8px #ffd6d6;
+  height: 18px;
+  left: 5px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }
-
-body {
-  font-family: "Karla", sans-serif;
+.aboutMe .aboutMeBio p {
+  font-size: 1.1rem;
+  color: #696969;
+  line-height: 1.6;
+  margin: 18px 0;
 }
-
-main {
-  width: 80%;
-  max-width: 1080px;
-  margin: 50px auto 0 auto;
+.aboutMe .aboutMeImage img {
+  width: 100%;
+  border-radius: 10px;
+}
+.aboutMe .aboutMeToolkit {
+  grid-column: 1/3;
+}
+.aboutMe .aboutMeToolkit h2 {
+  position: relative;
+  width: 18%;
+  font-size: 1.7rem;
+  color: #e96269;
+}
+.aboutMe .aboutMeToolkit h2::after {
+  content: "";
+  position: absolute;
+  background-color: #ffe3e3;
+  box-shadow: 0 0 8px #ffd6d6;
+  height: 18px;
+  left: 5px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+.aboutMe .aboutMeToolkit ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 60px auto;
+  padding: 20px 0;
+  font-family: "Nanum Pen Script", "cursive";
+}
+.aboutMe .aboutMeToolkit ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  padding: 20px 0;
+  width: 120px;
+  text-align: center;
+}
+.aboutMe .aboutMeToolkit ul li img {
+  width: 50px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
