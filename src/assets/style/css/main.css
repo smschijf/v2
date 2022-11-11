@@ -19,6 +19,18 @@ ul {
   list-style: none;
 }
 
+.button {
+  background-color: #e96269;
+  padding: 10px 15px;
+  margin: 10px 0;
+  width: auto;
+  border: 2px solid #e96269;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .hero {
   display: grid;
   width: 80%;
@@ -196,4 +208,84 @@ ul {
 .aboutMe .aboutMeToolkit ul li img {
   width: 50px;
   margin-bottom: 5px;
+}
+
+.contact {
+  padding: 100px 0;
+  background-color: #fff7f7;
+  font-size: 1rem;
+}
+.contact .contactContainer {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.contact .contactContainer .contactInformation {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactContainer .contactInformation h2 {
+  position: relative;
+  width: 93%;
+  font-size: 1.7rem;
+  color: #e96269;
+  z-index: 0;
+}
+.contact .contactContainer .contactInformation h2::after {
+  content: "";
+  position: absolute;
+  background-color: #ffe3e3;
+  box-shadow: 0 0 8px #ffd6d6;
+  height: 18px;
+  left: 5px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+.contact .contactContainer .contactInformation p {
+  margin: 30px 0 20px 0;
+  line-height: 1.6;
+}
+.contact .contactContainer .contactInformation .contactIcons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.contact .contactContainer .contactInformation .contactIcons li {
+  font-size: 1.4rem;
+}
+.contact .contactContainer .contactInformation .contactIcons li a {
+  color: #e96269;
+}
+.contact .contactContainer .contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactContainer .contactForm form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ffd6d6;
+  border-radius: 5px;
+}
+.contact .contactContainer .contactForm form textarea {
+  height: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ffd6d6;
+  border-radius: 5px;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+.contact .contactContainer .contactForm form .hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }/*# sourceMappingURL=main.css.map */
