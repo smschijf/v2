@@ -63,6 +63,13 @@
             clip-path: inset(100%);
           }
         }
+        .submitContainer {
+          .button {
+            &:hover {
+              border: 2px solid #ffd6d6;
+            }
+          }
+        }
       }
     }
   }

@@ -8,4 +8,10 @@
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background-color: white;
+    color:#e96269;
+    border: 2px solid white;
+  }
 }

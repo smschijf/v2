@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #ff9090;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}

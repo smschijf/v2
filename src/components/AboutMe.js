@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <section className="aboutMe">
       <div className="aboutMeBio">
-        <h2>About Me ☕</h2>
+        <h2>Over Mij ☕</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique magna sit amet purus gravida.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique magna sit amet purus gravida.</p>
       </div>
