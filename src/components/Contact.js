@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contactContainer">
         <div className="contactInformation">
           <h2>Neem Contact Op! 📝</h2>

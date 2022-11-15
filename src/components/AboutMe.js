@@ -8,7 +8,7 @@ import github from '../assets/icons/github.svg';
 
 const AboutMe = () => {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="aboutMe">
       <div className="aboutMeBio">
         <h2>Over Mij ☕</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique magna sit amet purus gravida.</p>
