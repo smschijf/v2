@@ -1,21 +1,42 @@
-import aboutMe from '../assets/img/avatar.png';
-import html from '../assets/icons/html.svg';
-import css from '../assets/icons/css.svg';
-import sass from '../assets/icons/sass.svg';
-import javascript from '../assets/icons/javascript.svg';
-import react from '../assets/icons/react.svg';
-import github from '../assets/icons/github.svg';
+import portrait from "../assets/img/portrait.png";
+import html from "../assets/icons/html.svg";
+import css from "../assets/icons/css.svg";
+import sass from "../assets/icons/sass.svg";
+import javascript from "../assets/icons/javascript.svg";
+import react from "../assets/icons/react.svg";
+import github from "../assets/icons/github.svg";
 
 const AboutMe = () => {
   return (
     <section className="aboutMe" id="aboutMe">
       <div className="aboutMeBio">
         <h2>Over Mij ☕</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique magna sit amet purus gravida.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique magna sit amet purus gravida.</p>
+        <p>
+          Ten eerste, bedankt voor het scrollen tot hier! Ik ben een tech
+          enthusiast met een interesse voor front-end development.
+        </p>
+        <p>
+          Naast coderen besteed ik mijn tijd aan het spelen van{" "}
+          <a
+            href="https://steamcommunity.com/id/sh4ndes/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            games
+          </a>{" "}
+          en het kijken van{" "}
+          <a
+            href="https://myanimelist.net/profile/sh4ndes"
+            target="_blank"
+            rel="noreferrer"
+          >
+            anime
+          </a>
+          . 👾 Ook kijk ik veel Youtube videos over van alles en nog wat :D
+        </p>
       </div>
       <div className="aboutMeImage">
-        <img src={aboutMe} alt="portrait"></img>
+        <img src={portrait} alt="portrait"></img>
       </div>
       <div className="aboutMeToolkit">
         <h2>Mijn Toolkit 💻</h2>

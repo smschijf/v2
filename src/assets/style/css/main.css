@@ -271,9 +271,16 @@ nav .inactive {
   line-height: 1.6;
   margin: 18px 0;
 }
+.aboutMe .aboutMeBio p a {
+  text-decoration: none;
+  color: #e96269;
+}
 .aboutMe .aboutMeImage img {
   width: 100%;
   border-radius: 10px;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutMe .aboutMeToolkit {
   grid-column: 1/3;

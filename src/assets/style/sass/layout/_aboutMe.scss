@@ -16,12 +16,18 @@
       color: $textColor;
       line-height: 1.6;
       margin: 18px 0;
+      a {
+        text-decoration: none;
+        color: $complementaryColor;
+      }
     }
   }
   .aboutMeImage {
     img {
       width: 100%;
       border-radius: 10px;
+      height: 360px;
+      object-fit: cover;
     }
   }
   .aboutMeToolkit {

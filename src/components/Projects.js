@@ -1,6 +1,7 @@
 import FightingGame from "../assets/img/fightingGame.png";
 import drawingApp from "../assets/img/drawingApp.png";
 import contactPage from "../assets/img/contactPage.png";
+import todoApp from "../assets/img/todoApp.png";
 
 const Projects = () => {
   return (
@@ -35,7 +36,7 @@ const Projects = () => {
             <img src={drawingApp} alt="drawing app"></img>
             <div className="projectsOverlay">
               <h3>Teken App</h3>
-              <p>Simpele teken applicatie met een aantal simpele functies. Dit was een oefening met het HTML canvas element en bijbehorende javascript functies.</p>
+              <p>Teken  web applicatie met een aantal simpele functies. Dit was een oefening met het HTML canvas element en bijbehorende javascript functies.</p>
               <ul className="toolsUsed">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -74,20 +75,20 @@ const Projects = () => {
             </div>
           </div>
           <div className="projectsCard">
-            <img src={FightingGame} alt="fighting game"></img>
+            <img src={todoApp} alt="todo app"></img>
             <div className="projectsOverlay">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem Ipsum</p>
+              <h3>Todo App</h3>
+              <p>Todo web applicatie met CRUD systeem.</p>
               <ul className="toolsUsed">
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>React</li>
+                <li>PHP</li>
               </ul>
               <div className="viewProject">
                 <a href="./" target="_blank" className="button" role="button" rel="noreferrer">
                   view live
                 </a>
-                <a href="./" target="_blank" className="button" role="button" rel="noreferrer">
+                <a href="https://github.com/smschijf/php-todo-crud" target="_blank" className="button" role="button" rel="noreferrer">
                   github
                 </a>
               </div>
