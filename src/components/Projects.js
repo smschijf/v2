@@ -4,6 +4,10 @@ import contactPage from "../assets/img/contactPage.png";
 import todoApp from "../assets/img/todoApp.png";
 
 const Projects = () => {
+  const handleAlertClick = () => {
+    alert("dit project staat nog niet online helaas :(");
+  };
+
   return (
     <>
       <span className="noteText">
@@ -15,7 +19,10 @@ const Projects = () => {
             <img src={FightingGame} alt="fighting game"></img>
             <div className="projectsOverlay">
               <h3>Fighting Game</h3>
-              <p>Simpele javascript game waarbij je twee spelers kan besturen met het toetsenbord.</p>
+              <p>
+                Simpele javascript game waarbij je twee spelers kan besturen met
+                het toetsenbord.
+              </p>
               <ul className="toolsUsed">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -23,10 +30,22 @@ const Projects = () => {
                 <li>PHP</li>
               </ul>
               <div className="viewProject">
-                <a href="https://u210578.gluweb.nl/fighting-game/" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="http://84.31.178.239/fighting-game/"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   view live
                 </a>
-                <a href="https://github.com/smschijf/fighter-game" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="https://github.com/smschijf/fighter-game"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   github
                 </a>
               </div>
@@ -36,17 +55,33 @@ const Projects = () => {
             <img src={drawingApp} alt="drawing app"></img>
             <div className="projectsOverlay">
               <h3>Teken App</h3>
-              <p>Teken  web applicatie met een aantal simpele functies. Dit was een oefening met het HTML canvas element en bijbehorende javascript functies.</p>
+              <p>
+                Teken web applicatie met een aantal simpele functies. Dit was
+                een oefening met het HTML canvas element en bijbehorende
+                javascript functies.
+              </p>
               <ul className="toolsUsed">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
               </ul>
               <div className="viewProject">
-                <a href="https://u210578.gluweb.nl/drawing-app/" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="http://84.31.178.239/drawing-app/"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   view live
                 </a>
-                <a href="https://github.com/smschijf/drawing-app" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="https://github.com/smschijf/drawing-app"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   github
                 </a>
               </div>
@@ -58,17 +93,34 @@ const Projects = () => {
             <img src={contactPage} alt="contact page"></img>
             <div className="projectsOverlay">
               <h3>Contact Pagina</h3>
-              <p>Schoolopdracht voor de front-end van de contact pagina van Vrijwilligershuis Nieuwegein. Hierbij heb ik samengewerkt met twee andere klasgenoten.</p>
+              <p>
+                Schoolopdracht voor de front-end van de contact pagina van
+                Vrijwilligershuis Nieuwegein. Hierbij heb ik samengewerkt met
+                twee andere klasgenoten.
+              </p>
               <ul className="toolsUsed">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>PHP</li>
               </ul>
               <div className="viewProject">
-                <a href="./" target="_blank" className="button" role="button" rel="noreferrer">
+                {/* eslint-disable-next-line */}
+                <a
+                  onClick={handleAlertClick}
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   view live
                 </a>
-                <a href="https://github.com/CcharlotteHh/VrijwilligersHuis_Nieuwegein" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="https://github.com/CcharlotteHh/VrijwilligersHuis_Nieuwegein"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   github
                 </a>
               </div>
@@ -85,10 +137,23 @@ const Projects = () => {
                 <li>PHP</li>
               </ul>
               <div className="viewProject">
-                <a href="./" target="_blank" className="button" role="button" rel="noreferrer">
+                {/* eslint-disable-next-line */}
+                <a
+                  onClick={handleAlertClick}
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   view live
                 </a>
-                <a href="https://github.com/smschijf/php-todo-crud" target="_blank" className="button" role="button" rel="noreferrer">
+                <a
+                  href="https://github.com/smschijf/php-todo-crud"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
                   github
                 </a>
               </div>

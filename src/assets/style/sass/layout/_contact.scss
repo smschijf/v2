@@ -30,6 +30,9 @@
           font-size: 1.4rem;
           a {
             color: $complementaryColor;
+            &:hover {
+              color: #BA3130;
+            }
           }
         }
       }
@@ -43,6 +46,8 @@
           margin: 10px 0;
           border: 2px solid $textBoxShadow;
           border-radius: 5px;
+          font-family: inherit;
+          font-size: 90%;
         }
         textarea {
           height: 200px;
@@ -52,7 +57,7 @@
           border-radius: 5px;
           resize: none;
           font-family: inherit;
-          font-size: inherit;
+          font-size: 90%;
         }
         .hidden {
           &:not(:focus):not(:active) {

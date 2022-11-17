@@ -60,5 +60,15 @@
     padding-top: 90vh;
     font-size: 19px;
     color: $complementaryColor;
+    svg {
+      animation: scrollDown 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes scrollDown {
+  50% {
+    transform: translateY(5px);
   }
 }

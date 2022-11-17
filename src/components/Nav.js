@@ -4,23 +4,58 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Nav = () => {
-
   const [open, setOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    const icon = document.querySelector(".menuToggle");
+
+    if(icon.classList.contains("menuAnimation")) {
+      icon.classList.remove("menuAnimation");
+    } else {
+      icon.classList.add("menuAnimation");
+    }
+  };
 
   return (
     <nav role="navigation">
-      <div className="menuToggle" onClick={()=>{setOpen(!open)}}>
-        <FontAwesomeIcon icon={faBars} />
+      <div
+        className="menuToggle"
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        <FontAwesomeIcon icon={faBars} onClick={handleMenuClick} />
       </div>
-      <ul className={`menu ${open? 'active' : 'inactive'}`}>
+      <ul className={`menu ${open ? "active" : "inactive"}`}>
         <li>
-          <a href="#projects" onClick={()=>{setOpen(!open)}}>Projecten</a>
+          <a
+            href="#projects"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Projecten
+          </a>
         </li>
         <li>
-          <a href="#aboutMe" onClick={()=>{setOpen(!open)}}>Over Mij</a>
+          <a
+            href="#aboutMe"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Over Mij
+          </a>
         </li>
         <li>
-          <a href="#contact" onClick={()=>{setOpen(!open)}}>Contact</a>
+          <a
+            href="#contact"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

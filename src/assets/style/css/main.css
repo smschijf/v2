@@ -57,10 +57,17 @@ nav .menuToggle {
   z-index: 2;
   cursor: pointer;
   color: #e96269;
+  transition: ease 0.5s;
 }
 nav .menuToggle svg {
   width: 100%;
   height: 100%;
+}
+nav .menuAnimation {
+  color: white;
+  transition: ease 0.3s;
+  -webkit-animation: animateMenu 0.3s;
+          animation: animateMenu 0.3s;
 }
 nav .menu {
   display: flex;
@@ -92,6 +99,23 @@ nav .inactive {
   transform: translateY(-100vh);
 }
 
+@-webkit-keyframes animateMenu {
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateMenu {
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .hero {
   display: grid;
   width: 80%;
@@ -153,7 +177,24 @@ nav .inactive {
   font-size: 19px;
   color: #e96269;
 }
+.hero .scrollDownIcon svg {
+  -webkit-animation: scrollDown 1s;
+          animation: scrollDown 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
 
+@-webkit-keyframes scrollDown {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes scrollDown {
+  50% {
+    transform: translateY(5px);
+  }
+}
 .noteText {
   font-family: "Nanum Pen Script", cursive;
   color: #b3b3b3;
@@ -375,6 +416,9 @@ nav .inactive {
 .contact .contactContainer .contactInformation .contactIcons li a {
   color: #e96269;
 }
+.contact .contactContainer .contactInformation .contactIcons li a:hover {
+  color: #BA3130;
+}
 .contact .contactContainer .contactForm form {
   display: flex;
   flex-direction: column;
@@ -384,6 +428,8 @@ nav .inactive {
   margin: 10px 0;
   border: 2px solid #ffd6d6;
   border-radius: 5px;
+  font-family: inherit;
+  font-size: 90%;
 }
 .contact .contactContainer .contactForm form textarea {
   height: 200px;
@@ -393,7 +439,7 @@ nav .inactive {
   border-radius: 5px;
   resize: none;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 90%;
 }
 .contact .contactContainer .contactForm form .hidden:not(:focus):not(:active) {
   position: absolute;
