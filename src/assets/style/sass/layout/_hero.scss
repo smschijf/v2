@@ -2,21 +2,33 @@
 
 .hero {
   display: grid;
-  width: 80%;
+  width: 90%;
   height: 100vh;
   max-width: 1080px;
   margin: 0 auto;
-  align-items: center;
-  grid-template-columns: repeat(2, auto);
+  align-content: center;
+  grid-template-rows: repeat(2, auto);
+  @include mq(lg) {
+    width: 80%;
+  }
+  @include mq(md) {
+    grid-template-columns: repeat(2, auto);
+  }
   .heroText {
     h1 {
       font-weight: 700;
       margin: 10px 0;
       color: $complementaryColor;
       position: relative;
-      width: 80%;
-      font-size: 2.5rem;
+      width: 60%;
+      font-size: 2rem;
       max-width: 430px;
+      @include mq(xs) {
+        width: 100%;
+      }
+      @include mq(md) {
+        font-size: 2.5rem;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -25,8 +37,11 @@
         height: 23px;
         left: 8px;
         bottom: 0;
-        width: 100%;
+        width: 165px;
         z-index: -1;
+        @include mq(xs) {
+          width: 340px;
+        }
       }
     }
     p {
@@ -50,6 +65,7 @@
   }
   .heroImage {
     max-width: 230px;
+    justify-self: center;
     img {
       width: 100%;
     }
@@ -60,6 +76,10 @@
     padding-top: 90vh;
     font-size: 19px;
     color: $complementaryColor;
+    display: none;
+    @include mq(xs) {
+      display: block;
+    }
     svg {
       animation: scrollDown 1s;
       animation-iteration-count: infinite;

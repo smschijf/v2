@@ -2,8 +2,45 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_45qy4fr",
+        "template_1dl1lwj",
+        form.current,
+        "Qh_pqNyxGDShxesuQ"
+      )
+      .then(
+        (result) => {
+          let modal = document.querySelector(".confirmationModal");
+          let closeModal = document.querySelector(".modalClose");
+
+          console.log(result.text);
+          e.target.reset();
+          modal.style.display = "block";
+          closeModal.onclick = () => {
+            modal.style.display = "none";
+          };
+          window.onclick = (e) => {
+            if (e.target === modal) {
+              modal.style.display = "none";
+            }
+          };
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="contactContainer">
@@ -32,7 +69,7 @@ const Contact = () => {
           </ul>
         </div>
         <div className="contactForm">
-          <form action="#" method="post" name="contact">
+          <form ref={form} onSubmit={sendEmail} name="contact">
             <label htmlFor="name" className="hidden">
               naam
             </label>
@@ -67,6 +104,17 @@ const Contact = () => {
               <button type="submit" className="button">
                 verzend bericht
               </button>
+              <div className="confirmationModal">
+                <div className="modalContent">
+                  <span className="modalClose">&times;</span>
+                  <h2>Succes!</h2>
+                  <p>
+                    Het formulier is succesvol verstuurd. Bedankt voor je
+                    interesse! Je kan een reactie verwachten binnen een aantal
+                    dagen.
+                  </p>
+                </div>
+              </div>
             </div>
           </form>
         </div>

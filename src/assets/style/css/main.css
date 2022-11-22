@@ -14,9 +14,14 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
   margin: 50px auto 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 80%;
+  }
 }
 
 ul {
@@ -118,21 +123,41 @@ nav .inactive {
 }
 .hero {
   display: grid;
-  width: 80%;
+  width: 90%;
   height: 100vh;
   max-width: 1080px;
   margin: 0 auto;
-  align-items: center;
-  grid-template-columns: repeat(2, auto);
+  align-content: center;
+  grid-template-rows: repeat(2, auto);
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 .hero .heroText h1 {
   font-weight: 700;
   margin: 10px 0;
   color: #e96269;
   position: relative;
-  width: 80%;
-  font-size: 2.5rem;
+  width: 60%;
+  font-size: 2rem;
   max-width: 430px;
+}
+@media screen and (min-width: 453px) {
+  .hero .heroText h1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .heroText h1 {
+    font-size: 2.5rem;
+  }
 }
 .hero .heroText h1::after {
   content: "";
@@ -142,8 +167,13 @@ nav .inactive {
   height: 23px;
   left: 8px;
   bottom: 0;
-  width: 100%;
+  width: 165px;
   z-index: -1;
+}
+@media screen and (min-width: 453px) {
+  .hero .heroText h1::after {
+    width: 340px;
+  }
 }
 .hero .heroText p {
   width: 80%;
@@ -166,6 +196,7 @@ nav .inactive {
 }
 .hero .heroImage {
   max-width: 230px;
+  justify-self: center;
 }
 .hero .heroImage img {
   width: 100%;
@@ -176,6 +207,12 @@ nav .inactive {
   padding-top: 90vh;
   font-size: 19px;
   color: #e96269;
+  display: none;
+}
+@media screen and (min-width: 453px) {
+  .hero .scrollDownIcon {
+    display: block;
+  }
 }
 .hero .scrollDownIcon svg {
   -webkit-animation: scrollDown 1s;
@@ -209,10 +246,15 @@ nav .inactive {
   margin-bottom: 100px;
 }
 .projects .projectsRow {
-  grid-template-columns: 6fr 4fr;
   display: grid;
   -moz-column-gap: 3.5%;
        column-gap: 3.5%;
+  grid-template-rows: auto;
+}
+@media screen and (min-width: 768px) {
+  .projects .projectsRow {
+    grid-template-columns: 6fr 4fr;
+  }
 }
 .projects .projectsRow .projectsCard {
   display: flex;
@@ -227,7 +269,12 @@ nav .inactive {
   border-radius: 10px;
 }
 .projects .projectsRow:nth-of-type(2) {
-  grid-template-columns: 4fr 6fr;
+  grid-template-rows: auto;
+}
+@media screen and (min-width: 768px) {
+  .projects .projectsRow:nth-of-type(2) {
+    grid-template-columns: 4fr 6fr;
+  }
 }
 .projects .projectsRow .projectsOverlay {
   display: flex;
@@ -280,18 +327,26 @@ nav .inactive {
 
 .aboutMe {
   display: grid;
-  grid-template-columns: 6.5fr 3.5fr;
-  row-gap: 100px;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+}
+@media screen and (min-width: 768px) {
+  .aboutMe {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    grid-template-columns: 6.5fr 3.5fr;
+  }
 }
 .aboutMe .aboutMeBio {
   display: flex;
   flex-direction: column;
+  grid-column: 1/3;
+}
+@media screen and (min-width: 768px) {
+  .aboutMe .aboutMeBio {
+    grid-column: 1/2;
+  }
 }
 .aboutMe .aboutMeBio h2 {
   position: relative;
-  width: 22%;
   font-size: 1.7rem;
   color: #e96269;
 }
@@ -303,7 +358,7 @@ nav .inactive {
   height: 18px;
   left: 5px;
   bottom: 0;
-  width: 100%;
+  width: 150px;
   z-index: -1;
 }
 .aboutMe .aboutMeBio p {
@@ -315,6 +370,16 @@ nav .inactive {
 .aboutMe .aboutMeBio p a {
   text-decoration: none;
   color: #e96269;
+}
+.aboutMe .aboutMeImage {
+  grid-column: 1/3;
+  justify-self: center;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .aboutMe .aboutMeImage {
+    grid-column: 2/3;
+  }
 }
 .aboutMe .aboutMeImage img {
   width: 100%;
@@ -328,7 +393,6 @@ nav .inactive {
 }
 .aboutMe .aboutMeToolkit h2 {
   position: relative;
-  width: 18%;
   font-size: 1.7rem;
   color: #e96269;
 }
@@ -340,7 +404,7 @@ nav .inactive {
   height: 18px;
   left: 5px;
   bottom: 0;
-  width: 100%;
+  width: 195px;
   z-index: -1;
 }
 .aboutMe .aboutMeToolkit ul {
@@ -350,6 +414,11 @@ nav .inactive {
   margin: 20px auto 60px auto;
   padding: 20px 0;
   font-family: "Nanum Pen Script", "cursive";
+}
+@media screen and (min-width: 768px) {
+  .aboutMe .aboutMeToolkit ul {
+    width: 90%;
+  }
 }
 .aboutMe .aboutMeToolkit ul li {
   display: flex;
@@ -372,12 +441,22 @@ nav .inactive {
 }
 .contact .contactContainer {
   display: grid;
-  grid-template-columns: 3fr 7fr;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .contact .contactContainer {
+    width: 80%;
+    grid-template-columns: 3fr 7fr !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact .contactContainer {
+    grid-template-columns: 4fr 6fr;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
 }
 .contact .contactContainer .contactInformation {
   display: flex;
@@ -385,10 +464,10 @@ nav .inactive {
 }
 .contact .contactContainer .contactInformation h2 {
   position: relative;
-  width: 93%;
   font-size: 1.7rem;
   color: #e96269;
   z-index: 0;
+  width: 130%;
 }
 .contact .contactContainer .contactInformation h2::after {
   content: "";
@@ -398,7 +477,7 @@ nav .inactive {
   height: 18px;
   left: 5px;
   bottom: 0;
-  width: 100%;
+  width: 275px;
   z-index: -1;
 }
 .contact .contactContainer .contactInformation p {
@@ -417,7 +496,7 @@ nav .inactive {
   color: #e96269;
 }
 .contact .contactContainer .contactInformation .contactIcons li a:hover {
-  color: #BA3130;
+  color: #ba3130;
 }
 .contact .contactContainer .contactForm form {
   display: flex;
@@ -451,6 +530,35 @@ nav .inactive {
 }
 .contact .contactContainer .contactForm form .submitContainer .button:hover {
   border: 2px solid #ffd6d6;
+}
+.contact .contactContainer .contactForm form .submitContainer .confirmationModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.contact .contactContainer .contactForm form .submitContainer .modalContent {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #ffe3e3;
+  border-radius: 5px;
+  width: 30%;
+}
+.contact .contactContainer .contactForm form .submitContainer .modalClose {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contact .contactContainer .contactForm form .submitContainer .modalClose:hover, .contact .contactContainer .contactForm form .submitContainer .modalClose:focus {
+  color: #e96269;
+  cursor: pointer;
 }
 
 footer {

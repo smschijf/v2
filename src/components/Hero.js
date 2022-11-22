@@ -20,12 +20,12 @@ const Hero = () => {
           </a>
           . 👨🏻‍💻
         </p>
-        <p>
+        {/* <p>
           <span className="smallerText">
             Psst! mijn portfolio is een WIP, dus bekijken op desktop is het
             beste voor nu!
           </span>
-        </p>
+        </p> */}
       </div>
       <div className="heroImage">
         <img src={Avatar} alt="avatar"></img>

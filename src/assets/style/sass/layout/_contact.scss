@@ -6,17 +6,24 @@
   font-size: 1rem;
   .contactContainer {
     display: grid;
-    grid-template-columns: 3fr 7fr;
-    column-gap: 10%;
-    width: 80%;
+    width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+    @include mq(lg) {
+      width: 80%;
+      grid-template-columns: 3fr 7fr !important;
+    }
+    @include mq(md) {
+      grid-template-columns: 4fr 6fr;
+      column-gap: 10%;
+    }
     .contactInformation {
       display: flex;
       flex-direction: column;
       h2 {
-        @include h2(93%);
+        @include h2(275px);
         z-index: 0;
+        width: 130%;
       }
       p {
         margin: 30px 0 20px 0;
@@ -31,7 +38,7 @@
           a {
             color: $complementaryColor;
             &:hover {
-              color: #BA3130;
+              color: #ba3130;
             }
           }
         }
@@ -72,6 +79,35 @@
           .button {
             &:hover {
               border: 2px solid #ffd6d6;
+            }
+          }
+          .confirmationModal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.7);
+          }
+          .modalContent {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 2px solid $textBackdrop;
+            border-radius: 5px;
+            width: 30%;
+          }
+          .modalClose {
+            float: right;
+            font-size: 1.5rem;
+            font-weight: bold;
+            &:hover, &:focus {
+              color: $complementaryColor;
+              cursor: pointer;
             }
           }
         }

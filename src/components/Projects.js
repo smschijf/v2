@@ -4,10 +4,6 @@ import contactPage from "../assets/img/contactPage.png";
 import todoApp from "../assets/img/todoApp.png";
 
 const Projects = () => {
-  const handleAlertClick = () => {
-    alert("dit project staat nog niet online helaas :(");
-  };
-
   return (
     <>
       <span className="noteText">
@@ -106,7 +102,7 @@ const Projects = () => {
               <div className="viewProject">
                 {/* eslint-disable-next-line */}
                 <a
-                  onClick={handleAlertClick}
+                  onClick="https://u210578.gluweb.nl/vhnieuwegein/"
                   target="_blank"
                   className="button"
                   role="button"
@@ -139,7 +135,7 @@ const Projects = () => {
               <div className="viewProject">
                 {/* eslint-disable-next-line */}
                 <a
-                  onClick={handleAlertClick}
+                  onClick="https://u210578.gluweb.nl/todocrud/"
                   target="_blank"
                   className="button"
                   role="button"

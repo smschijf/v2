@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 * {
   padding: 0;
   margin: 0;
@@ -13,9 +15,12 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
   margin: 50px auto 0 auto;
+  @include mq(lg) {
+    width: 80%;
+  }
 }
 
 ul {
