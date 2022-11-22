@@ -540,8 +540,9 @@ nav .inactive {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: animateModalBackground 0.4s;
+          animation: animateModalBackground 0.4s;
 }
 .contact .contactContainer .contactForm form .submitContainer .modalContent {
   background-color: #fff;
@@ -549,7 +550,24 @@ nav .inactive {
   padding: 20px;
   border: 2px solid #ffe3e3;
   border-radius: 5px;
-  width: 30%;
+  width: 90%;
+  -webkit-animation: animateModal 0.4s;
+          animation: animateModal 0.4s;
+}
+@media screen and (min-width: 640px) {
+  .contact .contactContainer .contactForm form .submitContainer .modalContent {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact .contactContainer .contactForm form .submitContainer .modalContent {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact .contactContainer .contactForm form .submitContainer .modalContent {
+    width: 30%;
+  }
 }
 .contact .contactContainer .contactForm form .submitContainer .modalClose {
   float: right;
@@ -561,6 +579,39 @@ nav .inactive {
   cursor: pointer;
 }
 
+@-webkit-keyframes animateModalBackground {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes animateModalBackground {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+@-webkit-keyframes animateModal {
+  0% {
+    margin: 10% auto;
+  }
+  100% {
+    margin: 15% auto;
+  }
+}
+@keyframes animateModal {
+  0% {
+    margin: 10% auto;
+  }
+  100% {
+    margin: 15% auto;
+  }
+}
 footer {
   width: 100%;
   position: relative;
