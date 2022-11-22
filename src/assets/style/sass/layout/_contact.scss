@@ -23,7 +23,10 @@
       h2 {
         @include h2(275px);
         z-index: 0;
-        width: 130%;
+        width: 100%;
+        @include mq(md) {
+          width: 130%;
+        }
       }
       p {
         margin: 30px 0 20px 0;

@@ -467,7 +467,7 @@ nav .inactive {
   font-size: 1.7rem;
   color: #e96269;
   z-index: 0;
-  width: 130%;
+  width: 100%;
 }
 .contact .contactContainer .contactInformation h2::after {
   content: "";
@@ -479,6 +479,11 @@ nav .inactive {
   bottom: 0;
   width: 275px;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .contact .contactContainer .contactInformation h2 {
+    width: 130%;
+  }
 }
 .contact .contactContainer .contactInformation p {
   margin: 30px 0 20px 0;
