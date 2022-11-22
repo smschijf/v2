@@ -31,6 +31,7 @@ const Nav = () => {
           <a
             href="#projects"
             onClick={() => {
+              handleMenuClick();
               setOpen(!open);
             }}
           >
@@ -41,6 +42,7 @@ const Nav = () => {
           <a
             href="#aboutMe"
             onClick={() => {
+              handleMenuClick();
               setOpen(!open);
             }}
           >
@@ -51,6 +53,7 @@ const Nav = () => {
           <a
             href="#contact"
             onClick={() => {
+              handleMenuClick();
               setOpen(!open);
             }}
           >
