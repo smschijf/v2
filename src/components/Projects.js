@@ -102,7 +102,7 @@ const Projects = () => {
               <div className="viewProject">
                 {/* eslint-disable-next-line */}
                 <a
-                  onClick="https://u210578.gluweb.nl/vhnieuwegein/"
+                  href="https://u210578.gluweb.nl/vhnieuwegein/"
                   target="_blank"
                   className="button"
                   role="button"
@@ -135,7 +135,7 @@ const Projects = () => {
               <div className="viewProject">
                 {/* eslint-disable-next-line */}
                 <a
-                  onClick="https://u210578.gluweb.nl/todocrud/"
+                  href="https://u210578.gluweb.nl/todocrud/"
                   target="_blank"
                   className="button"
                   role="button"

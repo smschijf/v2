@@ -5,6 +5,7 @@ import sass from "../assets/icons/sass.svg";
 import javascript from "../assets/icons/javascript.svg";
 import react from "../assets/icons/react.svg";
 import github from "../assets/icons/github.svg";
+import cv from "../assets/files/cv_092022.pdf";
 
 const AboutMe = () => {
   return (
@@ -13,7 +14,14 @@ const AboutMe = () => {
         <h2>Over Mij ☕</h2>
         <p>
           Ten eerste, bedankt voor het scrollen tot hier! Ik ben een tech
-          enthusiast met een interesse voor front-end development.
+          enthusiast met een interesse voor web development. Tijdens mijn
+          opleiding heb ik aan verschillende projecten gewerkt, maar mijn
+          belangstelling ligt toch bij front-end development. Voor meer
+          informatie over mijn achtergrond, download mijn{" "}
+          <a href={cv} target="_blank" rel="noreferrer" download>
+            cv
+          </a>
+          .
         </p>
         <p>
           Naast coderen besteed ik mijn tijd aan het spelen van{" "}
