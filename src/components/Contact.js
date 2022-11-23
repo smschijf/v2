@@ -4,6 +4,8 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const form = useRef();
@@ -41,8 +43,10 @@ const Contact = () => {
       );
   };
 
+  Aos.init();
+
   return (
-    <section className="contact" id="contact">
+    <section className="contact" id="contact" data-aos="fade-up" data-aos-once="true">
       <div className="contactContainer">
         <div className="contactInformation">
           <h2>Neem Contact Op! 📝</h2>

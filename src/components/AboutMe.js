@@ -6,11 +6,14 @@ import javascript from "../assets/icons/javascript.svg";
 import react from "../assets/icons/react.svg";
 import github from "../assets/icons/github.svg";
 import cv from "../assets/files/cv_092022.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const AboutMe = () => {
+  Aos.init();
   return (
     <section className="aboutMe" id="aboutMe">
-      <div className="aboutMeBio">
+      <div className="aboutMeBio" data-aos="fade-up" data-aos-once="true">
         <h2>Over Mij ☕</h2>
         <p>
           Ten eerste, bedankt voor het scrollen tot hier! Ik ben een tech
@@ -43,10 +46,10 @@ const AboutMe = () => {
           . 👾 Ook kijk ik veel Youtube videos over van alles en nog wat :D
         </p>
       </div>
-      <div className="aboutMeImage">
+      <div className="aboutMeImage" data-aos="fade-up" data-aos-once="true">
         <img src={portrait} alt="portrait"></img>
       </div>
-      <div className="aboutMeToolkit">
+      <div className="aboutMeToolkit" data-aos="fade-up" data-aos-once="true">
         <h2>Mijn Toolkit 💻</h2>
         <ul>
           <li>

@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-
 import Avatar from "../assets/img/avatar.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  Aos.init();
   return (
-    <section className="hero">
+    <section className="hero" data-aos="fade-up" data-aos-once="true">
       <div className="heroText">
         <h1>Hey! Ik ben Sander. 👋</h1>
         <p>

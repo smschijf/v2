@@ -11,7 +11,7 @@ const Projects = () => {
       </span>
       <section className="projects" id="projects">
         <div className="projectsRow">
-          <div className="projectsCard">
+          <div className="projectsCard" data-aos="fade-right" data-aos-once="true">
             <img src={FightingGame} alt="fighting game"></img>
             <div className="projectsOverlay">
               <h3>Fighting Game</h3>
@@ -47,7 +47,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="projectsCard">
+          <div className="projectsCard" data-aos="fade-left" data-aos-once="true">
             <img src={drawingApp} alt="drawing app"></img>
             <div className="projectsOverlay">
               <h3>Teken App</h3>
@@ -85,7 +85,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="projectsRow">
-          <div className="projectsCard">
+          <div className="projectsCard" data-aos="fade-right" data-aos-once="true">
             <img src={contactPage} alt="contact page"></img>
             <div className="projectsOverlay">
               <h3>Contact Pagina</h3>
@@ -122,7 +122,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="projectsCard">
+          <div className="projectsCard" data-aos="fade-left" data-aos-once="true">
             <img src={todoApp} alt="todo app"></img>
             <div className="projectsOverlay">
               <h3>Todo App</h3>
@@ -133,7 +133,6 @@ const Projects = () => {
                 <li>PHP</li>
               </ul>
               <div className="viewProject">
-                {/* eslint-disable-next-line */}
                 <a
                   href="https://u210578.gluweb.nl/todocrud/"
                   target="_blank"
