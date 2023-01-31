@@ -27,7 +27,7 @@ const Projects = () => {
               </ul>
               <div className="viewProject">
                 <a
-                  href="http://84.31.178.239/fighting-game/"
+                  href="http://84.107.183.106/fighting-game/"
                   target="_blank"
                   className="button"
                   role="button"
@@ -63,7 +63,7 @@ const Projects = () => {
               </ul>
               <div className="viewProject">
                 <a
-                  href="http://84.31.178.239/drawing-app/"
+                  href="http://84.107.183.106/drawing-app/"
                   target="_blank"
                   className="button"
                   role="button"
