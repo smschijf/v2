@@ -5,6 +5,7 @@ import sass from "../assets/icons/sass.svg";
 import javascript from "../assets/icons/javascript.svg";
 import react from "../assets/icons/react.svg";
 import github from "../assets/icons/github.svg";
+import php from "../assets/icons/php.svg";
 import cv from "../assets/files/cv_092022.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -67,6 +68,10 @@ const AboutMe = () => {
           <li>
             <img src={javascript} alt="javascript" />
             Javascript
+          </li>
+          <li>
+            <img src={php} alt="php" />
+            PHP
           </li>
           <li>
             <img src={react} alt="react" />
