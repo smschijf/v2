@@ -56,17 +56,17 @@ const Contact = () => {
           </p>
           <ul className="contactIcons">
             <li>
-              <a href="https://www.linkedin.com/in/sander-schijf-90b70a242/">
+              <a href="https://www.linkedin.com/in/sander-schijf-90b70a242/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/smschijf">
+              <a href="https://twitter.com/smschijf" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <a href="https://github.com/smschijf">
+              <a href="https://github.com/smschijf" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>

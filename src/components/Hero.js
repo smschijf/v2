@@ -32,9 +32,9 @@ const Hero = () => {
       <div className="heroImage">
         <img src={Avatar} alt="avatar"></img>
       </div>
-      <div className="scrollDownIcon">
+      <a href="#projects" className="scrollDownIcon">
         <FontAwesomeIcon icon={faAngleDown} />
-      </div>
+      </a>
     </section>
   );
 };
