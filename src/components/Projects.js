@@ -3,6 +3,7 @@ import drawingApp from "../assets/img/drawingApp.png";
 import contactPage from "../assets/img/contactPage.png";
 import todoApp from "../assets/img/todoApp.png";
 import filmBuddy from "../assets/img/filmBuddy.png";
+import speeldernis from "../assets/img/speeldernis.png";
 
 const Projects = () => {
   return (
@@ -178,7 +179,7 @@ const Projects = () => {
             data-aos="fade-right"
             data-aos-once="true"
           >
-            <img src={filmBuddy} alt="contact page"></img>
+            <img src={filmBuddy} alt="film buddy"></img>
             <div className="projectsOverlay">
               <h3>Film Buddy</h3>
               <p>
@@ -213,6 +214,36 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="projectsCard"
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
+            <img src={speeldernis} alt="speeldernis"></img>
+            <div className="projectsOverlay">
+              <h3>Speeldernis</h3>
+              <p>
+                Redesign van de website van Speeldernis. Dit was een klantopdracht waarbij ik heb samengewerkt met studenten van andere studierichtingen.
+              </p>
+              <ul className="toolsUsed">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>PHP</li>
+              </ul>
+              <div className="viewProject">
+                {/* eslint-disable-next-line */}
+                <a
+                  href="https://speeldernis.nl/"
+                  target="_blank"
+                  className="button"
+                  role="button"
+                  rel="noreferrer"
+                >
+                  view live
                 </a>
               </div>
             </div>
