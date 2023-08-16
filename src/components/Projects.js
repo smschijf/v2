@@ -198,7 +198,7 @@ const Projects = () => {
               <div className="viewProject">
                 {/* eslint-disable-next-line */}
                 <a
-                  href="https://film-buddy.pages.dev/"
+                  href="https://film-buddy.vercel.app/"
                   target="_blank"
                   className="button"
                   role="button"
